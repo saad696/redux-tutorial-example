@@ -9,7 +9,7 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     sign_in: (state) => {
-      state.isLogged = true
+      state.isLogged = !state.isLogged
     },
   },
 })
